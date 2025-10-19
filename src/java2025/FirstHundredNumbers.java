@@ -64,16 +64,16 @@ public class FirstHundredNumbers {
 		
 //		Using continue in a Loop
 		
-		for (int i = 1; i<=10; i++) {
-			
-		
-			System.out.println(i);
-			System.out.println(i);
-			if (i == 6) {
-				continue;
-			}
-			System.out.println(i);
-	
+//		for (int i = 1; i<=10; i++) {
+//			
+//		
+//			System.out.println(i);
+//			System.out.println(i);
+//			if (i == 6) {
+//				continue;
+//			}
+//			System.out.println(i);
+//	
 			
 			
 //		FOR-EACH LOOP
@@ -101,16 +101,80 @@ public class FirstHundredNumbers {
 //		for (int i = 1; i<=n; i++) {
 //			for (int j = 1; j<=i; j++) {
 //				System.out.println("*");
+		
+//		print  numbers using FOR and WHILE
+		
+//		for (int i=1; i<=100; i++) {
+//			System.out.println(i);
 			
+//			int i = 1;
+//			while (i <= 100) {
+//				System.out.println(i);
+//				i++;
 			
-			
+//		print even numbers using FOR and WHILE
+		
+//				for (int i=1; i<=100; i++) {
+//					if (i % 2 ==0) {
+//					System.out.println(i);
 					
+//					int i = 1;
+//					while (i <= 100){
+//						if (i % 2 == 0) {
+//							System.out.println(i + " ");
+//						}
+//							i++;
+							
+//							print sum of numbers 1 to 100 using for and while
+							
+//							int sum = 0;
+//							for (int i = 1; i <= 100; i++) {
+//								sum = sum + i;
+//							}
+//								System.out.println(sum);
+//					int sum = 0;
+//							int i = 1;
+//							while (i<=100) {
+//								sum = sum + i;
+//							
+//							i++;
+//							}
+//							System.out.println(sum);
+		
+//		print numbers 100 to 1 in reverse by using FOR and WHILE
+		
+//		for (int i = 100; i >=1; i--) {
+//			System.out.println(i);
 			
+//			int i = 100;
+//			while (i >= 1) {
+//				System.out.println(i);
+//
+//			i--;
 		
+//		using conditional inside loop
+//		int evenCount=0;
+//		int oddCount = 0;
+//		for (int i = 1; i <= 100; i++) {
+//			if (i % 2 == 0) {
+//				System.out.println(i + "-is even number");
+//		evenCount++;
+//			} else {
+//				oddCount++;
+//				System.out.println(i + "-is odd number");
 		
+//		using break and continue 
 		
+		for (int i = 1; i <=10; i++) {
+			
+			if (i == 5) {
+			continue;
 			}
+			if (i == 8) {
+				break;
+				}
+			System.out.println(i);
 		}
-
 	}
-//}
+}
+
