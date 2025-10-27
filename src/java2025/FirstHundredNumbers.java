@@ -153,6 +153,8 @@ public class FirstHundredNumbers {
 //			i--;
 		
 //		using conditional inside loop
+		
+		
 //		int evenCount=0;
 //		int oddCount = 0;
 //		for (int i = 1; i <= 100; i++) {
@@ -163,18 +165,98 @@ public class FirstHundredNumbers {
 //				oddCount++;
 //				System.out.println(i + "-is odd number");
 		
+		
+		
 //		using break and continue 
 		
-		for (int i = 1; i <=10; i++) {
+//		for (int i = 1; i <=10; i++) {
+//			
+//			if (i == 5) {
+//			continue;
+//			}
+//			if (i == 8) {
+//				break;
+//				}
+//			System.out.println(i);		
+//		}
+//	}
+//}
 			
-			if (i == 5) {
-			continue;
-			}
-			if (i == 8) {
-				break;
-				}
-			System.out.println(i);
-		}
-	}
-}
+	
+//	ARRAYS
+	
+	
+//			int[] numbers = {70,120,130,50,10};
+//			int max = numbers[0];
+//			for (int i = 1; i<numbers.length; i++) {
+//				if (numbers [i] > max) {
+//					max = numbers[i];
+//				}
+//				}
+//			System.out.println(max);
+//					
+//				}
+//			}
 
+//			int[] numbers = {8,7,6,5,1,3,2};
+//			int min = numbers[0];
+//			for (int i = 1; i<numbers.length; i++) {
+//				if (numbers[i] < min) {
+//					min = numbers[i];
+//				}
+//			}
+//			System.out.println(min);
+//				}
+//			}
+
+
+//			PRINT AN ARRAY IN REVERSE ORDER 
+		
+//			int[] numbers = {50,40,30,20,10};
+//			for (int i = numbers.length-1; i>=0; i--) {
+//				System.out.println(numbers[i]);
+		
+		
+//		int[] numbers = {10,20,25,39,50,71,83,75,94,98,100};
+//		int evenCount = 0;
+//		int oddCount = 0;
+//		for (int num : numbers) {
+//			if (num % 2 ==0) {
+//				evenCount++;
+//			}else {
+//				oddCount++;
+//			}
+//		}
+//				System.out.println("count of even numbers is : " + evenCount);
+//
+//				System.out.println("count of odd numbers is : " + oddCount);
+		
+		
+//		int[] numbers = {10,20,30,40,50,60,70,80};
+//		int  sum = 0;
+//		double average;
+//		for (int num : numbers) {
+//			sum+=num;
+//		}
+//		average = (double) sum / numbers.length;
+//		System.out.println(sum);
+//		System.out.println(average);
+		
+		
+		
+		int[] numbers = {10,30,50,70,90};
+		int key = 30;
+		boolean found = false;
+		for (int i = 1; i< numbers.length; i++) {
+			if (numbers[i] == key) {
+				System.out.println("element"  + key  +"found in index " + i);
+				found = true;
+				break;
+			}
+			
+		}
+		if (!found) {
+			System.out.println("element" + key + "not found in an array :");
+		}
+		}
+}
