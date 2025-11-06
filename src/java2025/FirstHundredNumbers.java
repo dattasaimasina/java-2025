@@ -1,9 +1,9 @@
 package java2025;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class FirstHundredNumbers {
 
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
 //		for (int i =1; i <=100; i++) {
 //			System.out.println(i);
 		
@@ -244,19 +244,71 @@ public class FirstHundredNumbers {
 		
 		
 		
-		int[] numbers = {10,30,50,70,90};
-		int key = 30;
-		boolean found = false;
-		for (int i = 1; i< numbers.length; i++) {
-			if (numbers[i] == key) {
-				System.out.println("element"  + key  +"found in index " + i);
-				found = true;
-				break;
-			}
-			
+//		int[] numbers = {10,30,50,70,90};
+//		int key = 30;
+//		boolean found = false;
+//		for (int i = 1; i< numbers.length; i++) {
+//			if (numbers[i] == key) {
+//				System.out.println("element"  + key  +"found in index " + i);
+//				found = true;
+//				break;
+//			}
+//			
+//		}
+//		if (!found) {
+//			System.out.println("element" + key + "not found in an array :");
+		
+//		}
+//		}
+
+
+
+
+//find sum of number using method and loop
+
+//		public static int findSum(int n) {
+//			int sum = 0;
+//			for (int i=1; i<=n; i++) {
+//				sum= sum+i;
+//	}
+//			return sum;
+//}
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter First Number");
+//		int number = sc.nextInt();
+//		int result = findSum(number);
+//		System.out.println(number+result);
+//		sc.close();
+//		
+//	}
+//	
+//}
+	
+	
+	
+	
+	
+//	write a method of max of two numbers
+	
+	public static int findMax(int a , int b) {
+//		int sum = 0;
+		if (a>b) {
+			return a;
 		}
-		if (!found) {
-			System.out.println("element" + key + "not found in an array :");
+		else {
+			return b;
 		}
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter first number");
+		int num1 = sc.nextInt();
+		System.out.println("Enter Second Number");
+		int num2 = sc.nextInt();
+		int result = findMax(num1 , num2);
+		System.out.println("The Maximum number is - " + result);
+		sc.close();
 		}
-}
+		
+	}
