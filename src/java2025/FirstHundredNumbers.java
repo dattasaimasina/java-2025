@@ -281,34 +281,49 @@ public class FirstHundredNumbers {
 //		System.out.println(number+result);
 //		sc.close();
 //		
-//	}
-//	
-//}
-	
 	
 	
 	
 	
 //	write a method of max of two numbers
 	
-	public static int findMax(int a , int b) {
-//		int sum = 0;
-		if (a>b) {
-			return a;
+//	public static int findMax(int a , int b) {
+////		int sum = 0;
+//		if (a>b) {
+//			return a;
+//		}
+//		else {
+//			return b;
+//		}
+//	}
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter first number");
+//		int num1 = sc.nextInt();
+//		System.out.println("Enter Second Number");
+//		int num2 = sc.nextInt();
+//		int result = findMax(num1 , num2);
+//		System.out.println("The Maximum number is - " + result);
+//		sc.close();
+	
+	
+	
+//	write a method to check even/odd using if and return
+	
+	public static String findEvenOdd(int num) {
+		if (num % 2 ==0) {
+			return "even";
 		}
 		else {
-			return b;
+			return "odd";
 		}
 	}
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter first number");
-		int num1 = sc.nextInt();
-		System.out.println("Enter Second Number");
-		int num2 = sc.nextInt();
-		int result = findMax(num1 , num2);
-		System.out.println("The Maximum number is - " + result);
+		System.out.println("Enter a number");
+		int number = sc.nextInt();
+		String result = findEvenOdd(number);
+		System.out.println("The number " + number +  " is "  + result);
 		sc.close();
-		}
-		
 	}
+}
