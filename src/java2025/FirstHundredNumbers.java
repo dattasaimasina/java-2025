@@ -1,5 +1,5 @@
 package java2025;
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class FirstHundredNumbers {
 
@@ -310,20 +310,56 @@ public class FirstHundredNumbers {
 	
 //	write a method to check even/odd using if and return
 	
-	public static String findEvenOdd(int num) {
-		if (num % 2 ==0) {
-			return "even";
+//	public static String findEvenOdd(int num) {
+//		if (num % 2 ==0) {
+//			return "even";
+//		}
+//		else {
+//			return "odd";
+//		}
+//	}
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter a number");
+//		int number = sc.nextInt();
+//		String result = findEvenOdd(number);
+//		System.out.println("The number " + number +  " is "  + result);
+//		sc.close();
+	
+	
+	
+	
+//	print multiplication table using loop & parameter
+	
+//	public static void printTable(int n){
+//		System.out.println("Multiplication table of " + n + ":");
+//		for (int i = 1; i<=10; i++) {
+//			System.out.println(n + "x" + i + "=" + (n*i));	
+//		}
+//	    }
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enter number : ");
+//		int number = sc.nextInt();
+//		printTable(number);
+//		sc.close();
+	
+	
+	
+	public static int[] reverseArray(int[] arr) {
+		int n = arr.length;
+		int[] reversed = new int[n];
+		for (int i = 0; i<n; i++) {
+			reversed [i] = arr[n-1-i];
 		}
-		else {
-			return "odd";
-		}
+		return reversed;
 	}
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter a number");
-		int number = sc.nextInt();
-		String result = findEvenOdd(number);
-		System.out.println("The number " + number +  " is "  + result);
-		sc.close();
+		int[] numbers = {10,11,15,20,23};
+		int[] result = reverseArray(numbers);
+		System.out.println("Reversed array: ");
+		for (int num : result) {
+			System.out.println(num + " ");
+		}
 	}
 }
