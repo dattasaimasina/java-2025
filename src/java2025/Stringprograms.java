@@ -167,12 +167,115 @@ public class Stringprograms {
 	
 	
 	
+//	    public static void main(String[] args) {
+//	        StringBuilder sb = new StringBuilder();
+//	        sb.append("OpenAI ");
+//	        sb.append("ChatGPT");
+//	        System.out.println("Appended: " + sb);
+//	        sb.reverse();
+//	        System.out.println("Reversed: " + sb);
+	
+	
+	
+//	TOOGLCASE
+	
+//	    public static void main(String[] args) {
+//	        String str = "Java";
+//	        String result = "";
+//	        for (int i = 0; i < str.length(); i++) {
+//	            char ch = str.charAt(i);
+//	            if (Character.isUpperCase(ch)) {
+//	                result += Character.toLowerCase(ch);
+//	            } else if (Character.isLowerCase(ch)) {
+//	                result += Character.toUpperCase(ch);
+//	            } else {
+//	                result += ch;
+//	            }
+//	        }
+//	        System.out.println("Original: " + str);
+//	        System.out.println("Toggled: " + result);
+	
+	
+	
+	
+	        
+//	    public static void main(String[] args) {
+//	        String str = "Hello@123";
+//	        int letters = 0, digits = 0, special = 0;
+//	        for (int i = 0; i < str.length(); i++) {
+//	            char ch = str.charAt(i);
+//	            if (Character.isLetter(ch)) {
+//	                letters++;
+//	            } else if (Character.isDigit(ch)) {
+//	                digits++;
+//	            } else {
+//	                special++;
+//	            }
+//	        }
+//	        System.out.println("Letters: " + letters);
+//	        System.out.println("Digits: " + digits);
+//	        System.out.println("Special Characters: " + special);
+	
+	
+	
+	
+//	    public static void main(String[] args) {
+//	        String sentence = "Java is fun to learn";
+//	        String[] words = sentence.split(" ");
+//	        String longest = "";
+//	        for (String word : words) {
+//	            if (word.length() > longest.length()) {
+//	                longest = word;
+//	            }
+//	        }
+//	        System.out.println("Longest word: " + longest);
+	
+	
+	
+	
+	
+	
 	    public static void main(String[] args) {
-	        StringBuilder sb = new StringBuilder();
-	        sb.append("OpenAI ");
-	        sb.append("ChatGPT");
-	        System.out.println("Appended: " + sb);
-	        sb.reverse();
-	        System.out.println("Reversed: " + sb);
-	}
+	        Scanner sc = new Scanner(System.in);
+	        System.out.print("Enter your password: ");
+	        String password = sc.nextLine();
+	        boolean hasUpper = false;
+	        boolean hasLower = false;
+	        boolean hasDigit = false;
+	        boolean hasSpecial = false;
+	        boolean hasMinLength = password.length() >= 8;
+	        for (int i = 0; i < password.length(); i++) {
+	            char ch = password.charAt(i);
+	            if (Character.isUpperCase(ch)) {
+	                hasUpper = true;
+	            } 
+	            else if (Character.isLowerCase(ch)) {
+	                hasLower = true;
+	            } 
+	            else if (Character.isDigit(ch)) {
+	                hasDigit = true;
+	            } 
+	            else if ("!@#$%^&*".contains(String.valueOf(ch))) {
+	                hasSpecial = true;
+	            }
+	        }
+	        int strengthPoints = 0;
+	        if (hasUpper) strengthPoints++;
+	        if (hasLower) strengthPoints++;
+	        if (hasDigit) strengthPoints++;
+	        if (hasSpecial) strengthPoints++;
+	        if (hasMinLength) strengthPoints++;
+	        if (strengthPoints == 5) {
+	            System.out.println("Password Strength: STRONG");
+	        } 
+	        else if (strengthPoints >= 3) {
+	            System.out.println("Password Strength: MEDIUM");
+	        } 
+	        else {
+	            System.out.println("Password Strength: WEAK");
+	        }
+	        sc.close();
+
+
+	    }
 }
